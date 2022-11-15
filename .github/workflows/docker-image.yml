@@ -21,7 +21,7 @@ jobs:
       run:  |
         docker login -u mpierce80 -p dckr_pat_l4_z1bfuZPsRutp1k2fTRZo_L5o
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mpierce80/unifi:$(date +%s)
+      run: docker build . --file Dockerfile --tag mpierce80/unifi:6.5.55
 
     - name: Docker Push
-      run: docker push mpierce80/unifi:$(date +%s)
+      run: docker push mpierce80/unifi:6.5.55
