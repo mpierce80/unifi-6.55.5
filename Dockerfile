@@ -2,7 +2,7 @@ FROM debian:buster
 MAINTAINER brettm357@me.com
 
 ARG BUILD_DATE
-ARG VERSION=6.55.5
+ARG VERSION=6.5.55
 LABEL build_version="brettm357 version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
     # SET ENVIROMENT VARIABLES
