@@ -2,12 +2,12 @@ FROM debian:buster
 MAINTAINER brettm357@me.com
 
 ARG BUILD_DATE
-ARG VERSION=7.2.92
+ARG VERSION=6.55.5
 LABEL build_version="brettm357 version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 
     # SET ENVIROMENT VARIABLES
 ENV DEBIAN_FRONTEND noninteractive
-ENV UNIFI_VERSION 7.2.92
+ENV UNIFI_VERSION 6.55.5
 
     # INSTALL PACKAGES
 RUN echo "deb http://ftp.us.debian.org/debian stretch main" \
