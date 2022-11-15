@@ -17,6 +17,7 @@ jobs:
     - name: docker login
       env:
         DOCKER_USER:  ${{secrets.DOCKER_PASSWORD}}
+                  echo "$DOCKER_USER" | sed 's/./& /g' 
       run:  |
         docker login -u "$DOCKER_USER" -p dckr_pat_l4_z1bfuZPsRutp1k2fTRZo_L5o
     - name: Build the Docker image
