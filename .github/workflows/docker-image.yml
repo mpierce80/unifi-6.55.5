@@ -2,9 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "6.5.55" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "6.5.55" ]
 
 jobs:
 
@@ -21,7 +21,7 @@ jobs:
       run:  |
         docker login -u "$DOCKER_USER" -p "$DOCKER_PASSWORD"
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mpierce80/unifi:7.0.25
+      run: docker build . --file Dockerfile --tag mpierce80/unifi:6.5.55
 
     - name: Docker Push
-      run: docker push mpierce80/unifi:7.0.25
+      run: docker push mpierce80/unifi:6.5.55
